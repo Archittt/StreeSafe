@@ -27,7 +27,7 @@ closeChatbotButton.addEventListener('click', function () {
 
 // Send Message to Chatbot Function
 async function sendMessageToChatbot(message) {
-    const apiKey = "AIzaSyCI0cha59eogAVTa7zzoQa44h_4dU4wJT8";  // Replace with your actual API key
+    const apiKey = "your_api_key";  // Replace with your actual API key
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
   
     // Create request payload using the user's input message
