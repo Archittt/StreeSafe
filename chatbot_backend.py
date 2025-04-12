@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configure your API key
-genai.configure(api_key="AIzaSyCI0cha59eogAVTa7zzoQa44h_4dU4wJT8")
+genai.configure(api_key="your_api_key")
 
 # Set up generation configuration
 generation_config = {
