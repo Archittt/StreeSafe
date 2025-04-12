@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    background-color: #ffc0cb;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+}
+
+.part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+nav h1 {
+    font-size: 45px;
+    display: flex;
+    gap: 10px;
+}
+
+nav h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+nav button {
+    padding: 22px 40px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid #000;
+}
+
+.center {
+    padding: 80px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+.center-part1 {
+    height: 100%;
+    width: 45%;
+}
+
+.center-part2 {
+    height: 82%;
+    width: 50%;
+    position:absolute;
+    margin-left: 750px;
+    margin-top: -130px;
+}
+
+.center-part1 h1 {
+    line-height: 1.2;
+    font-size: 70px;
+    font-family: serif;
+}
+
+.center-part1 p {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.center-part1 button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+}
+
+.center-part2 img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.features {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.features .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+}
+
+.card i {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.about {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+.about .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.contact .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #6f6d6d;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .chatbot-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbot-messages {
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px;
+  }
+  
+  .chatbot-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .chatbot-input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .chatbot-input-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .close-chatbot {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  #chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+    color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+  
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
