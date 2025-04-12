@@ -1,4 +1,4 @@
-# स्त्रीSafe Chatbot 💬
+# स्त्रीSafe Website 💬
 
 This project integrates an AI-powered chatbot into the स्त्रीSafe website, designed to provide real-time support and information using the Gemini API from Google. It uses a Flask backend and a simple frontend built with HTML, CSS, and JavaScript.
 
