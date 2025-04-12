@@ -27,40 +27,27 @@ closeChatbotButton.addEventListener('click', function () {
 
 // Send Message to Chatbot Function
 async function sendMessageToChatbot(message) {
-    const apiKey = "your_api_key";  // Replace with your actual API key
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
-  
-    // Create request payload using the user's input message
-    const requestData = {
-        prompt: {
-            text: message  // User's input message goes here
-        }
-    };
-  
     try {
-        const response = await fetch(apiUrl, {
+        const response = await fetch('http://127.0.0.1:5000/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(requestData), // Send the prompt data in the request body
+            body: JSON.stringify({ message }),
         });
-  
+
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
-  
+
         const data = await response.json();
-        if (data.candidates && data.candidates.length > 0) {
-            return data.candidates[0].content;  // Get the chatbot's response
-        } else {
-            return 'Sorry, I didn’t get that. Please try again.';
-        }
+        return data.response || 'No response from the assistant.';
     } catch (error) {
         console.error('Error:', error);
         return 'There was an issue connecting to the chatbot service.';
     }
 }
+
 
 // Display Chat Messages Function
 function displayMessage(message, className) {
