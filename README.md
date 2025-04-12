@@ -26,3 +26,8 @@ streesafe-chatbot/
 ├── style.css                # Styles for the chatbot
 ├── script.js                # Handles chatbot frontend logic
 └── README.md                # Project documentation
+
+##  Contributing
+Have an idea or found a bug? Contributions are welcome!  
+Feel free to use, modify, and share it.
+Please open an issue or submit a pull request to help improve the project.
