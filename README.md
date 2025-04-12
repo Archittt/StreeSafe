@@ -17,16 +17,6 @@ This project integrates an AI-powered chatbot into the स्त्रीSafe we
 - **AI Model**: Google Gemini (via `google-generativeai` SDK)
 - **Other Tools**: Flask-CORS
 
-## 📂 Project Structure
-
--streesafe-chatbot/
--│
--├── chatbot_backend.py       # Flask backend server
--├── index.html               # Main HTML page
--├── style.css                # Styles for the chatbot
--├── script.js                # Handles chatbot frontend logic
--└── README.md                # Project documentation
-
 ##  Contributing
 Have an idea or found a bug? Contributions are welcome!  
 Feel free to use, modify, and share it.
